@@ -12,7 +12,7 @@ def find_text_in_command(command, text):
 def getout(cmd):
     return subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, encoding='utf-8').stdout
 
-if name == 'main':
+if __name__ == '__main__':
     try:
         arguments = sys.argv
         command = arguments[1]
